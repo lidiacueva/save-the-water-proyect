@@ -1,0 +1,663 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+   *{
+      margin: 0;
+      padding: 0 ;
+      box-sizing: border-box;
+   }
+   .flex {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  body{
+    scroll-behavior: smooth;
+  }
+    
+
+h1 {
+    font-family: "Inria Serif", serif;
+}
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Roboto", sans-serif;
+}
+
+ p,
+ a  {
+    font-family: "Inter", sans-serif;
+ }
+
+
+/* nav*/
+
+header{
+ background:#a1c9f1;
+ text-align: center;
+ position: sticky;
+ top: 0;
+ z-index: 2;
+ 
+}
+
+nav{
+ height: 60px;
+ padding:20px;
+ width: 100%;
+ display: flex;
+ align-items: center;
+}
+
+.nav-list{
+  display: flex;
+  list-style: none;
+  gap: 10px;
+  align-items: center;
+  
+}
+
+
+.nav-list .right{
+  position: relative;
+  left: 70%;
+  bottom: 0;
+}
+
+.nav-link{
+  color: #F5F5F5;
+  text-decoration: none;
+  font-size: 1.4rem;
+  padding: 10px;
+  font-family: "Inria Serif", serif;
+  transition: 0.5s;
+ 
+}
+
+
+.nav-link:hover{
+background: #070bcee7;;
+}
+
+#icon-menu{
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  right: 20px;
+  top: 16px;
+  font-size: 20px;
+  
+}
+  
+/*imágen principal*/
+
+ .container-hero{
+  width: 100%;
+  height: 600px;
+  position: relative;
+  top: 10px;
+  background-image: url(../images/imagen-principal.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+ }
+
+ .container-info-hero{
+  max-width: 800px;
+  height: 500px;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 1;
+  color: #957dad;
+  position: relative;
+ }
+ .container-info-hero h1{
+  font-size: 50px;
+  margin-bottom: 20px;
+ }
+ .container-info-hero p{
+  padding: 10px;
+  font-size: 25px;
+ }
+
+  .container-info-hero a{
+   background-color: #d291bc;
+   text-decoration: none;
+   color: rgb(255, 255, 255);
+   padding: 10px;
+   text-transform: uppercase;
+   font-weight: bold;
+   text-align: center;
+   border-radius: 10px;
+   width: 400px;
+     }
+   
+
+     /*acerca de save the water*/
+
+     .acerca-container {
+      padding: 20px 20px ;
+      color: #000;
+      background-color: #fff;
+      
+      
+      }
+      .acerca{
+          padding: 50px;
+      }
+      .acerca h2{
+         font-size: 50px ;
+         margin-bottom: 25px;
+         font-family: "Inter", sans-serif;
+         color: #486f99;
+         }
+
+      .acerca p{
+        font-size: 25px ;
+      }
+
+
+      /* pseudo clases*/
+      .pseudo-container{
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         padding: 50px;
+         
+         
+      }
+      
+     
+     .pseudo-box{
+      flex-grow: 1;
+      flex-wrap: wrap;
+      position: relative;
+      height: 400px;
+      flex-basis: 200px;
+      overflow: hidden;
+      transition: 0.5s;
+      cursor: pointer;
+     }
+     .pseudo-box:hover{
+      flex-grow: 3;
+     }
+      
+     .pseudo-box img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: 0.5s;
+     }
+
+    .pseudo-box-content{
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      padding: 10px;
+      color: #ffffff;
+      transition: 0.5s;
+      background-color: #0609b9ee;
+
+    }
+    .pseudo-box-content a{
+      color: #F5F5F5;
+    }
+    
+
+    .pseudo-box:hover .pseudo-box-content{
+      opacity: 1;
+    }
+    .pseudo-box:hover  img{
+      filter: blur(0);
+    }
+    
+   
+
+
+    /*blog página principal*/
+
+    
+.blog-container {
+  padding: 20px;
+  gap: 30px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.blog-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 15px;
+  background-color: #e7e8ff;
+  transition: 0.5s;
+}
+
+.blog-card:nth-child(even) {
+  background-color: #071c5b;
+  flex-direction: row-reverse;
+  color: #e7e8ff;
+  transition: 0.5s;
+}
+
+.blog-card:hover {
+  box-shadow: 3px 0px 15px 3px rgba(76, 76, 76, 0.2274509804);
+}
+
+.blog-card:hover .blog-img img {
+  width: 900px;
+  height: 900px;
+}
+
+.blog-img {
+  flex-grow: 1;
+  height: 600px;
+  width: 60%;
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+.blog-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s;
+}
+
+.blog-content {
+  flex-grow: 1;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 10px;
+  transition: 0.5s;
+}
+
+.blog-content h3::first-letter {
+  text-transform: uppercase;
+  font-size: 4rem;
+  color: rgb(7, 1, 1);
+}
+
+.img-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.img-container div {
+  width: 600px;
+  height: 600px;
+  position: relative;
+  background-color: #071c5b;
+}
+.img-1 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  transition: 0.5s;
+}
+
+    
+    @media (max-width: 1200px) {
+      .hero_container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #e7e8ff;
+      }
+      .hero_section {
+        width: 80%;
+        justify-content: center;
+        align-items: center;
+      }
+      .hero_section h1 {
+        font-size: 5rem;
+        text-align: center;
+        letter-spacing: -10px;
+      }
+      .pseudo-container{
+        align-items: center;
+        flex-direction: column;
+      }
+      .pseudo-box{
+        margin-bottom: 40px;
+        width: 300px;
+      }
+      
+      }
+
+      /*footer*/
+      footer{
+         padding: 10px;
+         color: #000;
+         text-align: right;
+         font-family: "Inria Serif", serif;
+         align-items: right;
+        
+      }
+      
+      footer a{
+       
+         text-decoration: none;
+         background-color: #a79aff;
+        color: #F5F5F5;
+        
+      }
+      
+
+      /*Importancia*/
+
+
+      .blog-container-2{
+         padding: 5px;
+         background-color: #85e3ff;
+         width: 100%;
+         object-fit: cover;
+       }
+   
+       .blog-card-2{
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+         width: 100%;
+         gap: 15px;
+         padding: 20px;
+         object-fit: cover;
+       }
+   
+       .blog-img-2{
+         flex-grow: 1;
+         height: 600px;
+         width: 60%;
+         object-fit: cover;
+       }
+   
+       .blog-img-2 img{
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+       }
+   
+       .blog-content-2{
+         flex-grow: 1;
+         width: 40%;
+         display: flex;
+         flex-direction: column;
+         padding: 50px;
+         gap: 10px;
+         font-size: 18px;
+         
+       }
+       .blog-content-2 h1{
+        font-size: 40px;
+        padding: 20px;
+       }
+       
+
+
+       .blog-container-3{
+         padding: 50px;
+         gap: 10px;
+         display: flex;
+         align-items: center;
+         flex-direction: row-reverse;
+         background-color: #ffffff;
+         color: #000;
+         
+       }
+   
+       .blog-card-3{
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+         width: 40%;
+         gap: 15px;
+       flex-direction: row-reverse;
+         
+       }
+   
+       
+   
+       .blog-content-3{
+         flex-grow: 1;
+         width: 50%;
+         display: flex;
+         flex-direction: column;
+         padding: 50px;
+         gap: 15px;
+         
+       }
+
+       .blog-content-3 h2{
+        font-size: 40px;
+        padding: 5px;
+       }
+       .text{
+        padding: 10px 98px ;
+        color: #000;
+        background-color: #fff;
+        text-align: center;
+        
+       }
+       .text h3{
+        font-size: 40px ;
+        margin-bottom: 25px;
+        font-family: "Inter", sans-serif;
+        color: #00050b;
+        text-align: left;
+       }
+       .text p{
+        font-size: 17px;
+        text-align: left;
+         margin-bottom: 25px;
+       }
+       
+      
+
+       /*conocer más*/
+
+       .blog-container-conocer-más{
+        padding: 100px;
+        background-color: #edf7fa;
+      }
+  
+      .blog-card-conocer-más{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        gap: 15px;
+        padding: 20px;
+      }
+  
+      .blog-conocer-más img{
+        flex-grow: 1;
+        height: 20%;
+        width: 20%;
+      }
+  
+      .blog-img-conocer-más img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+  
+      .blog-content-conocer-más{
+        flex-grow: 1;
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        gap: 10px;
+      }
+
+      .blog-card-conocer-más h1{
+        text-align: center;
+        font-size: 40px;
+        padding: 10px;
+         }
+      .blog-card-conocer-más p{
+        text-align: left;
+        font-size: 20px;
+      }
+    
+      
+
+
+       .problemática-container{
+        padding: 120px 0px;
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        color: #000;
+       }
+       .otros-problemas{
+        padding:80px;
+        margin: 20px;
+        background-color: #e7fff7;
+       }
+
+       .otros-problemas img{
+        width: 300px;
+        height: 200px;
+        margin-bottom: 15px;
+
+       }
+       .otros-problemas h2{
+        font-size: 20px;
+        margin-bottom: 20px;
+       }
+
+       .otros-problemas p{
+        font-size: 18px;
+        
+       }
+       
+       .estiajes-container{
+        padding: 80px ;
+        display: flex;
+        color: #0a0213;
+        background-color: #957dad;
+       }
+
+       .estiajes-container img{
+        width: 400px;
+        height: 350px;
+
+       }
+
+       .estiaje{
+        margin-right: 200px;
+       }
+
+       .estiaje h3{
+        font-size: 55px;
+        margin-bottom: 25px;
+       }
+       .estiaje p{
+        margin-bottom: 10px;
+       }
+
+       .mayor-información-container{
+        padding: 50px ;
+        display: flex;
+        justify-content: space-between;
+        color: #000;
+       }
+       .más-información {
+        flex-grow: 1;
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        gap: 30px;
+       }
+       .más-información h4{
+        text-align: center;
+        font-size: 40px;
+       }
+       .más-información a{
+        color: #6abce5;
+       }
+       
+
+       /*día del agua*/
+       
+       
+      .blog-container-dia-del-agua{
+         padding: 5px;
+         background-color: #85e3ff;
+         width: 100%;
+         object-fit: cover;
+       }
+   
+       .blog-card-dia-del-agua{
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+         width: 100%;
+         gap: 15px;
+         padding: 20px;
+         object-fit: cover;
+       }
+   
+       .blog-img-dia-del-agua{
+         flex-grow: 1;
+         height: 600px;
+         width: 170%;
+         object-fit: cover;
+       }
+   
+       .blog-img-dia-del-agua img{
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+       }
+   
+       .blog-content-dia-del-agua{
+         flex-grow: 1;
+         width: 40%;
+         display: flex;
+         flex-direction: column;
+         padding: 50px;
+         gap: 10px;
+         font-size: 18px;
+         
+       }
+       .blog-content-dia-del-agua h1{
+        font-size: 40px;
+        padding: 20px;
+       }
+
+       .dia-del-agua-container{
+        padding: 20px 20px ;
+        color: #080000;
+        background-color: #fff;
+        
+        
+        }
+        .día-del-agua{
+            padding: 10px;
+        }
+        .día-del-agua h2{
+           font-size: 50px ;
+           margin-bottom: 25px;
+           font-family: "Inter", sans-serif;
+           color: #486f99;
+           }
+  
+        .día-del-agua p{
+          font-size: 25px ;
+        }
