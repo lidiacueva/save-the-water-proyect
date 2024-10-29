@@ -1,0 +1,88 @@
+/*soluciones y cuidados*/
+
+.blog-container-soluciones-y-cuidados{
+    padding: 5px;
+    background-color: #85e3ff;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .blog-card-soluciones-y-cuidados{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 15px;
+    padding: 20px;
+    object-fit: cover;
+  }
+
+  .blog-img-soluciones-y-cuidados{
+    flex-grow: 1;
+    height: 600px;
+    width: 170%;
+    object-fit: cover;
+  }
+
+  .blog-img-soluciones-y-cuidados img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .blog-content-soluciones-y-cuidados{
+    flex-grow: 1;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    gap: 10px;
+    font-size: 18px;
+    
+  }
+  .blog-content-soluciones-y-cuidados h1{
+   font-size: 40px;
+   padding: 20px;
+   
+  }
+
+  .soluciones-y-cuidados-container{
+    padding: 110px 110px ;
+    color: #080000;
+    background-color: #fff;
+    
+    }
+    .soluciones-y-cuidados{
+        padding: 10px;
+    }
+    .soluciones-y-cuidados h2{
+       font-size: 50px ;
+       margin-bottom:30px;
+       font-family: "Inter", sans-serif;
+       color: #486f99;
+       }
+       .soluciones-y-cuidados h3{
+        padding: 10px;
+        background-color: #aff8d8;
+        color:#02010ac1;
+       }
+
+    .soluciones-y-cuidados p{
+      font-size: 17px ;
+      margin-bottom: 20px;
+      background-color: #dbffd6;
+    }
+    .img-container div {
+      width: 600px;
+      height: 600px;
+      position: relative;
+      background-color: #071c5b;
+    }
+    
+    .img-1,
+     .img-2 {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+    }

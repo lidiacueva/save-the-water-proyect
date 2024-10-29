@@ -1,0 +1,27 @@
+@media (max-width: 1200px) {
+    .hero_container {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: #e7e8ff;
+    }
+    .hero_section {
+      width: 80%;
+      justify-content: center;
+      align-items: center;
+    }
+    .hero_section h1 {
+      font-size: 5rem;
+      text-align: center;
+      letter-spacing: -10px;
+    }
+    .pseudo-container{
+      align-items: center;
+      flex-direction: column;
+    }
+    .pseudo-box{
+      margin-bottom: 40px;
+      width: 300px;
+    }
+    
+    }

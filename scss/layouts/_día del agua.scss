@@ -1,0 +1,67 @@
+/*día del agua*/
+    
+    
+.blog-container-dia-del-agua{
+    padding: 5px;
+    background-color: #85e3ff;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .blog-card-dia-del-agua{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 15px;
+    padding: 20px;
+    object-fit: cover;
+  }
+
+  .blog-img-dia-del-agua{
+    flex-grow: 1;
+    height: 600px;
+    width: 170%;
+    object-fit: cover;
+  }
+
+  .blog-img-dia-del-agua img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .blog-content-dia-del-agua{
+    flex-grow: 1;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    gap: 10px;
+    
+    
+  }
+  .blog-content-día-del-agua h1{
+   font-size: 40px;
+   padding: 20px;
+  }
+
+  .dia-del-agua-container{
+   padding: 110px 110px ;
+   color: #080000;
+   background-color: #fff;
+   
+   }
+   .día-del-agua{
+       padding: 10px;
+   }
+   .día-del-agua h2{
+      font-size: 50px ;
+      margin-bottom:30px;
+      font-family: "Inter", sans-serif;
+      color: #486f99;
+      }
+
+   .día-del-agua p{
+     font-size: 20px ;
+   }

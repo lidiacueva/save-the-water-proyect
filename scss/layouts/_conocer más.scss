@@ -1,0 +1,126 @@
+ /*conocer más*/
+
+ .blog-container-conocer-más{
+    padding: 5px;
+    background-color: #85e3ff;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .blog-card-conocer-más{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 15px;
+    padding: 20px;
+    object-fit: cover;
+  }
+
+  .blog-img-conocer-más{
+    flex-grow: 1;
+    height: 600px;
+    width: 170%;
+    object-fit: cover;
+  }
+
+  .blog-img-conocer-más img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .blog-content-conocer-más{
+    flex-grow: 1;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    gap: 10px;
+    font-size: 18px;
+    
+  }
+  .blog-content-conocer-más h1{
+   font-size: 40px;
+   padding: 20px;
+   text-align: center;
+   }
+  
+
+
+   .problemática-container{
+    padding: 120px 0px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    color: #000;
+   }
+   .otros-problemas{
+    padding:80px;
+    margin: 20px;
+    background-color: #e7fff7;
+   }
+
+   .otros-problemas img{
+    width: 300px;
+    height: 200px;
+    margin-bottom: 15px;
+
+   }
+   .otros-problemas h2{
+    font-size: 20px;
+    margin-bottom: 20px;
+   }
+
+   .otros-problemas p{
+    font-size: 18px;
+    
+   }
+   
+   .estiajes-container{
+    padding: 80px ;
+    display: flex;
+    color: #0a0213;
+    background-color: #957dad;
+   }
+
+   .estiajes-container img{
+    width: 400px;
+    height: 350px;
+
+   }
+
+   .estiaje{
+    margin-right: 200px;
+   }
+
+   .estiaje h3{
+    font-size: 55px;
+    margin-bottom: 25px;
+   }
+   .estiaje p{
+    margin-bottom: 10px;
+   }
+
+   .mayor-información-container{
+    padding: 50px ;
+    display: flex;
+    justify-content: space-between;
+    color: #000;
+   }
+   .más-información {
+    flex-grow: 1;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 30px;
+   }
+   .más-información h4{
+    text-align: center;
+    font-size: 40px;
+   }
+   .más-información a{
+    color: #6abce5;
+   }
+   

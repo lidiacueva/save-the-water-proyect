@@ -1,0 +1,215 @@
+/*imágen principal*/
+
+.container-hero{
+    width: 100%;
+    height: 600px;
+    position: relative;
+    top: 10px;
+    background-image: url(../images/imagen-principal.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    .container-info-hero{
+        max-width: 800px;
+        height: 500px;
+        margin: auto;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        z-index: 1;
+        color: #957dad;
+        position: relative;
+        h1{
+            font-size: 50px;
+            margin-bottom: 20px;
+            }
+            p{
+                padding: 10px;
+                font-size: 25px;
+                }
+                a{
+                    background-color: #d291bc;
+                    text-decoration: none;
+                    color: rgb(255, 255, 255);
+                    padding: 10px;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    text-align: center;
+                    border-radius: 10px;
+                    width: 400px;
+                      }
+        }
+    }
+    
+    
+      /*acerca de save the water*/
+    
+      .acerca-container {
+       padding: 20px 20px ;
+       color: #000;
+       background-color: #fff;
+       .acerca{
+        padding: 50px;
+        h2{
+            font-size: 50px ;
+            margin-bottom: 25px;
+            font-family: "Inter", sans-serif;
+            color: #486f99;
+            }
+            p{
+                font-size: 25px ;
+              }
+         }
+       
+       }
+       
+    
+    
+    
+    
+       /* pseudo clases*/
+       .pseudo-container{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 50px;
+          
+          .pseudo-box{
+            flex-grow: 1;
+            flex-wrap: wrap;
+            position: relative;
+            height: 400px;
+            flex-basis: 200px;
+            overflow: hidden;
+            transition: 0.5s;
+            cursor: pointer;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transition: 0.5s;
+               }
+            
+           }
+           .pseudo-box:hover{
+            flex-grow: 3;
+           }
+          
+       }
+      
+     .pseudo-box-content{
+       position: absolute;
+       bottom: 0;
+       left: 0;
+       padding: 10px;
+       color: #ffffff;
+       transition: 0.5s;
+       background-color: #0609b9ee;
+    
+     }
+     .pseudo-box-content a{
+       color: #F5F5F5;
+     }
+     
+    
+     .pseudo-box:hover .pseudo-box-content{
+       opacity: 1;
+     }
+     .pseudo-box:hover  img{
+       filter: blur(0);
+     }
+     
+    
+    
+    
+     /*blog página principal*/
+    
+     
+    .blog-container {
+    padding: 20px;
+    gap: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    }
+    
+    .blog-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 15px;
+    background-color: #e7e8ff;
+    transition: 0.5s;
+    }
+    
+    .blog-card:nth-child(even) {
+    background-color: #071c5b;
+    flex-direction: row-reverse;
+    color: #e7e8ff;
+    transition: 0.5s;
+    }
+    
+    .blog-card:hover {
+    box-shadow: 3px 0px 15px 3px rgba(76, 76, 76, 0.2274509804);
+    }
+    
+    .blog-card:hover .blog-img img {
+    width: 900px;
+    height: 900px;
+    }
+    
+    .blog-img {
+    flex-grow: 1;
+    height: 600px;
+    width: 60%;
+    transition: 0.5s;
+    overflow: hidden;
+    }
+    
+    .blog-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+    }
+    
+    .blog-content {
+    flex-grow: 1;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 10px;
+    transition: 0.5s;
+    }
+    
+    .blog-content h3::first-letter {
+    text-transform: uppercase;
+    font-size: 4rem;
+    color: rgb(7, 1, 1);
+    }
+    
+    .img-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    }
+    
+    .img-container div {
+    width: 600px;
+    height: 600px;
+    position: relative;
+    background-color: #071c5b;
+    }
+    .img-1 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    transition: 0.5s;
+    }
