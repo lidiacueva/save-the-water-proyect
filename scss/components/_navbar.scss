@@ -1,59 +1,46 @@
 /* nav*/
 
-header{
-    background:#a1c9f1;
-    text-align: center;
-    position: sticky;
-    top: 0;
-    z-index: 2;
-    
-    }
-    
-    nav{
-    height: 60px;
-    padding:20px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    }
-    
-    .nav-list{
-    display: flex;
-    list-style: none;
-    gap: 10px;
-    align-items: center;
-    
-    }
-    
-    
-    .nav-list .right{
+    header{
     position: relative;
-    left: 70%;
-    bottom: 0;
-    }
-    
-    .nav-link{
+    padding: 10px 20px;
+    background-color: #b6a8fb;
     color: #F5F5F5;
-    text-decoration: none;
-    font-size: 1.4rem;
-    padding: 10px;
-    font-family: "Inria Serif", serif;
-    transition: 0.5s;
-    
+    }
+    nav{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .logo{
+     max-width: 6rem;
+     border-radius: 10px;
+    }
+    .nav-links{
+        list-style: none;
+        display: flex;
+        gap: 15px;
+    }
+    .nav-links a{
+        text-decoration: none;
+        color: #F5F5F5;
+        font-size: 18px;
+    }
+    .nav-links a :hover{
+        color: #4b66ee;
+    }
+    .hamburguer{
+        display: none;
+        flex-direction: column;
+        cursor: pointer;
+    }
+    .bar{
+        width: 25px;
+        height: 3px;
+        background-color: #F5F5F5;
+        margin: 4px 0;
+        transition: 0.5s;
     }
     
+   
     
-    .nav-link:hover{
-    background: #070bcee7;;
-    }
-    
-    #icon-menu{
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    right: 20px;
-    top: 16px;
-    font-size: 20px;
-    
-    }
     

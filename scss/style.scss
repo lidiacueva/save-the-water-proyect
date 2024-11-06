@@ -1,23 +1,18 @@
+//base
+@import "base/variables";
+@import "base/reset";
 
+//components
+@import "components/footer";
+@import "components/navbar";
 
-   /*footer*/
-   footer{
-      padding: 10px;
-      color: #000;
-      text-align: right;
-      font-family: "Inria Serif", serif;
-      align-items: right;
-     
-   }
-   
-   footer a{
-    
-      text-decoration: none;
-      background-color: #a79aff;
-     color: #F5F5F5;
-     
-   }
-   
+//layouts
+@import "layouts/media";
+@import "layouts/soluciones y cuidados";
+@import "layouts/importancia";
+@import "layouts/día del agua";
+@import "layouts/conocer más";
+@import "layouts/index";
 
 
 

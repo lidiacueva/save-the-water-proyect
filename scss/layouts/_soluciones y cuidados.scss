@@ -2,7 +2,7 @@
 
 .blog-container-soluciones-y-cuidados{
     padding: 5px;
-    background-color: #85e3ff;
+    background-color: $coloruno;
     width: 100%;
     object-fit: cover;
   }
@@ -48,8 +48,8 @@
 
   .soluciones-y-cuidados-container{
     padding: 110px 110px ;
-    color: #080000;
-    background-color: #fff;
+    color: $colordos;
+    background-color: $colortres;
     
     }
     .soluciones-y-cuidados{
@@ -59,24 +59,24 @@
        font-size: 50px ;
        margin-bottom:30px;
        font-family: "Inter", sans-serif;
-       color: #486f99;
+       color: $colorcuatro;
        }
        .soluciones-y-cuidados h3{
         padding: 10px;
-        background-color: #aff8d8;
-        color:#02010ac1;
+        background-color: $colorcinco;
+        color:$colordos;
        }
 
     .soluciones-y-cuidados p{
       font-size: 17px ;
       margin-bottom: 20px;
-      background-color: #dbffd6;
+      background-color: $colortres;
     }
     .img-container div {
       width: 600px;
       height: 600px;
       position: relative;
-      background-color: #071c5b;
+      background-color: $colorseis;
     }
     
     .img-1,
