@@ -79,8 +79,15 @@ nav {
   font-size: 18px;
 }
 
-.nav-links a :hover {
-  color: #4b66ee;
+.nav-link {
+  transition: 0.5s;
+  border: 1px solid transparent;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.nav-link:hover {
+  border: 1px solid #F5F5F5;
 }
 
 .hamburguer {
